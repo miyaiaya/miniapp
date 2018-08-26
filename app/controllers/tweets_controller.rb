@@ -9,7 +9,7 @@ class TweetsController < ApplicationController
   end
 
   def create
-    Tweet.new(tweet_params)
+    Tweet.create(tweet_params)
     redirect_to action: :index
   end
 
