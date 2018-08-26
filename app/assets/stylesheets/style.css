@@ -26,3 +26,13 @@
   border-radius: 10px;
 }
 
+.field{
+  height: 100px;
+  width: 900px;
+  margin: 0 auto;
+
+
+}
+.email_field{
+  background-color: #90caf9;
+}
