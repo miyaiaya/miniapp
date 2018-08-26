@@ -4,6 +4,9 @@ class TweetsController < ApplicationController
     @tweets = Tweet.order("created_at DESC")
   end
 
+  def new
+  end
+
 
 
 
