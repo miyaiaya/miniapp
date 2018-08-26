@@ -1,0 +1,28 @@
+.contents_post {
+  height: 100px;
+  width:  700px;
+  margin: 0 auto;
+  background-color: yellow;
+}
+
+.input-text{
+  text-align: center;
+  margin:20px;
+}
+
+.new-title{
+  color: gray;
+  position:relative;
+    top:10px;
+    left:100px;
+}
+
+.btn-block{
+  position: relative;
+     left:120px;
+  height: 40px;
+  width: 70px;
+  background-color: #bbdefb;
+  border-radius: 10px;
+}
+
