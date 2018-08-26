@@ -26,13 +26,22 @@
   border-radius: 10px;
 }
 
+.user_title{
+  position: relative;
+      left:50px;
+}
+
 .field{
   height: 100px;
   width: 900px;
   margin: 0 auto;
-
-
 }
-.email_field{
-  background-color: #90caf9;
+
+.actions{
+  text-align: center;
+}
+
+.devise_links{
+  text-align: center;
+  margin-top: 10px;
 }
