@@ -1,7 +1,9 @@
+<%= render partial:"tweet" %>
+
 <div class="row">
   <%= form_for @tweet do |f| %>
       <div class="row">
-        <div class="input">
+        <div class="input-text">
           <%= f.text_area :text , style: 'width: 70%;height: 300px;' %>
         </div>
         <div class="col10 push1">
