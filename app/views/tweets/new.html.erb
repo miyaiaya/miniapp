@@ -1,13 +1,17 @@
 <%= render partial:"tweet" %>
 
+<div class="new-title">
+<h5>ブログを投稿</h5>
+</div>
+
 <div class="row">
   <%= form_for @tweet do |f| %>
       <div class="row">
         <div class="input-text">
           <%= f.text_area :text , style: 'width: 70%;height: 300px;' %>
         </div>
-        <div class="col10 push1">
-          <%= submit_tag "投稿" %>
+        <div class="new-button">
+          <%= submit_tag "投稿" ,class: "btn-block" %>
         </div>
       </div>
     <% end %>
