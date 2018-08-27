@@ -17,6 +17,10 @@ class TweetsController < ApplicationController
     @tweet = Tweet.find(params[:id])
   end
 
+  def update
+    redirect_to action: :index
+  end
+
 
 
   private

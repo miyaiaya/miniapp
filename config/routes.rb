@@ -5,4 +5,5 @@ Rails.application.routes.draw do
   get 'tweets/new' => 'tweets#new'
   post 'tweets'    => 'tweets#create'
   get 'tweets/:id/edit' => 'tweets#edit'
+  patch 'tweets/:id'  => 'tweets#update'
 end

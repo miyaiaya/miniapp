@@ -5,7 +5,7 @@
 </div>
 
 <div class="row">
-  <%= form_for @tweet do |f| %>
+  <%= form_for @tweet, :url => { :controller => :tweets, :action => :update} do |f| %>
       <div class="row">
         <div class="input-text">
           <%= f.text_field :title , style: 'width: 70%' %>
