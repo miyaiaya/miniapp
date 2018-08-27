@@ -9,14 +9,25 @@ class TweetsController < ApplicationController
   end
 
   def create
-    Tweet.create(text: tweet_params[:text],user_id: current_user.id)
+    Tweet.create(title: tweet_params[:title], text: tweet_params[:text],user_id: current_user.id)
+    redirect_to action: :index
+  end
+
+  def edit
+    @tweet = Tweet.find(params[:id])
+  end
+
+  def update
+    tweet = Tweet.find(params[:id])
+    tweet.update(tweet_params)if tweet.user_id == current_user.id
     redirect_to action: :index
   end
 
 
+
   private
   def tweet_params
-    params.require(:tweet).permit(:text)
+    params.require(:tweet).permit(:text , :title)
   end
 
 end
