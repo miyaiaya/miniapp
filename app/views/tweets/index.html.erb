@@ -6,14 +6,14 @@
 
   <div class="row">
     <% @tweets.each do |tweet| %>
-    <div class="col s12 m6">
+    <div class="col m8 offset-m2 ">
       <div class="card blue-grey darken-1">
         <div class="card-content white-text">
             <%= simple_format(tweet.text) %>
         </div>
         <div class="card-action">
-          <a href="#"></a>
-          <a href="#">This is a link</a>
+          <a href="#">EDIT</a>
+          <a href="#">DESTROY</a>
         </div>
       </div>
     </div>
