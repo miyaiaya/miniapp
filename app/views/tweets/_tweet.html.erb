@@ -3,10 +3,19 @@
       <a href="#" class="brand-logo">Blog</a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
         <% if user_signed_in? %>
+        <%= link_to "Sign in", new_user_session_path, class:'post' %>
+      </ul>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
          <%= link_to "Sign out", destroy_user_session_path, method: :delete %>
+       </ul>
+       <ul id="nav-mobile" class="right hide-on-med-and-down">
          <li><a href="/tweets/new">New</a></li>
+       </ul>
         <% else %>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
          <%= link_to "Sign in", new_user_session_path, class:'post' %>
+       </ul>
+       <ul id="nav-mobile" class="right hide-on-med-and-down">
          <%= link_to "Sign up", new_user_registration_path, class:'post' %>
         <%end %>
       </ul>
