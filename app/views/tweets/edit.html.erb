@@ -4,16 +4,26 @@
 <h5>ブログを編集</h5>
 </div>
 
+
+<p class="edit_rogo">title</p>
 <div class="row">
   <%= form_for @tweet, :url => { :controller => :tweets, :action => :update} do |f| %>
-      <div class="row">
-        <div class="input-text">
-          <%= f.text_field :title , style: 'width: 70%' %>
-          <%= f.text_area :text , style: 'width: 70%;height: 300px;' %>
+      <form class="col s12">
+        <div class="row">
+          <div class="input-field col s6 offset-s2">
+             <%= f.text_field :title , id: "input_text", type:"text" , maxlength:"10" %>
+            <label for="input_text"></label>
+          </div>
+        </div>
+      <p class="edit_rogo">text</p>
+        <div class="row">
+          <div class="input-field col s8 offset-s2">
+           <%= f.text_area :text , id:"textarea1" ,class:"materialize-textarea" , maxlength:"120"%>
+            <label for="textarea1"></label>
+          </div>
         </div>
         <div class="new-button">
           <%= submit_tag "SENT" ,class: "btn-block" %>
         </div>
-      </div>
-    <% end %>
-  </div>
+  <% end %>
+    </div>

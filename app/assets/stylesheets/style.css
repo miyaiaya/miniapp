@@ -46,10 +46,13 @@
   margin-top: 10px;
 }
 
-.col s12 m8{
-  margin: 0 auto;
-}
+.edit_rogo{
+  color: gray;
+  position:relative;
+    top:20px;
+    left:180px;
 
+}
 
 
 
