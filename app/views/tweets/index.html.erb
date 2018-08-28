@@ -15,7 +15,7 @@
         <div class="card-action">
           <% if user_signed_in? && current_user.id == tweet.user_id %>
           <a href="/tweets/<%= tweet.id %>/edit">EDIT</a>
-          <a href="#">DESTROY</a>
+          <a class="confirm" href="/tweets/<%= tweet.id %>" data-method="delete">DESTROY</a>
           <% end %>
         </div>
       </div>
