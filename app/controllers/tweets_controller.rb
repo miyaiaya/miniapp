@@ -9,8 +9,12 @@ class TweetsController < ApplicationController
   end
 
   def create
-    Tweet.create(title: tweet_params[:title], text: tweet_params[:text],user_id: current_user.id)
-    redirect_to action: :index
+    @tweet = Tweet.new(title: tweet_params[:title], text: tweet_params[:text],user_id: current_user.id)
+    if @tweet.save
+       redirect_to action: :index
+    else
+      render action: :new
+    end
   end
 
   def edit
