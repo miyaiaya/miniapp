@@ -62,4 +62,10 @@
   background-color: orange;
 }
 
+#error_explanation li {
+  list-style: none;
+  color: gray;
+  position: relative;
+    left: 200px;
+}
 
