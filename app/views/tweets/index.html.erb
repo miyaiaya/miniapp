@@ -2,8 +2,6 @@
 <%= render partial:"tweet" %>
   <!--ここからフォーム -->
 
-
-
   <div class="row">
     <% @tweets.each do |tweet| %>
     <div class="col m8 offset-m2 ">
@@ -21,9 +19,15 @@
       </div>
     </div>
     <% end %>
-  </div>
+   </div>
+
+<div class="card-panel amber darken-4">
+  <%= paginate(@tweets) %>
+</div>
 
 
 <script src="./app.js" type="text/javascript"></script>
+
+
 </body>
 </html>

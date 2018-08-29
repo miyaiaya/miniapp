@@ -51,8 +51,11 @@
   position:relative;
     top:20px;
     left:180px;
-
 }
 
+.card-panel{
+  position: relative;
+    bottom: 0;
+}
 
 
